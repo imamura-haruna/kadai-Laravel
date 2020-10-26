@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('http://XXXXXX.jp/XXX','XXX\AAAController@bbb'
-);
+/*Route::get('http://XXXXXX.jp/XXX','XXX\AAAController@bbb'
+);*/
 
 Route::get('admin/profile/create','admin\ProfileController@add'
 );
