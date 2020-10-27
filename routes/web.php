@@ -18,6 +18,10 @@ Route::get('/', function () {
 /*Route::get('http://XXXXXX.jp/XXX','XXX\AAAController@bbb'
 );*/
 
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('news/create', 'Admin\NewsController@add');
+});
+
 Route::get('admin/profile/create','admin\ProfileController@add'
 );
 
