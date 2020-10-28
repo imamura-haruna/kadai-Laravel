@@ -9,18 +9,18 @@ class ProfileController extends Controller
 {
     //
     public function add(){
-        return view('Admin.profile.create');
+        return view('admin.profile.create');
     }
     
    public function create(){
-        return redirect('Admin/profile/create');
+        return redirect('admin/profile/create');
     }
     
     public function edit(){
-        return view('Admin.profile.edit');
+        return view('admin.profile.edit');
     }
     
     public function update(){
-        return redirect('Admin/profile/edit');
+        return redirect('admin/profile/edit');
     }
 }
