@@ -36,7 +36,10 @@ Route::get('admin/profile/edit','Admin\ProfileController@edit'
 )->middleware('auth');
 
 Route::post('admin/profile/create' , 'Admin\ProfileController@create');
-Route::post('admin/profile/edit','Admin\ProfileController@update');
+
+//登録したニュースデータを更新
+Route::get('admin/profile/edit', 'Admin\ProfileController@edit')->middleware('auth'); 
+Route::post('admin/profile/edit', 'Admin\ProfileController@update')->middleware('auth'); 
 
 Auth::routes();
 
